@@ -12,5 +12,14 @@ const GET_CLIENTS = gql`
   }
 `;
 
+const GET_CLIENT_DROPDOWN = gql`
+  query getClients{
+    clients{
+      id
+      name
+    }
+  }
+`
 
-export {GET_CLIENTS}
+
+export {GET_CLIENTS,GET_CLIENT_DROPDOWN}
